@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Salary Calculator
+    </title>
+   
+</head>
+<body>
+    <form id = "form" class = "form">
+        <div class = "container" id = "container">
+
+            <div class = "heading" id = "heading">
+                    <h1>
+                        Salary Calculator
+                    </h1>
+            </div>
+
+            <div class = "userInfo" id = "userInfo">
+                   <label for = "firstName" >Enter Employee Name : </label>
+                   <input type = "text" id="firstName"></input>
+            </br>
+                   <label for = "grossPay" >Enter Gross Pay : </label>
+                   <input type = "text" id="grossPay"></input>
+            </div>
+
+            <div class = "addition" id = "addition">
+                <h1> Additions in Dollars:</h1>
+                
+                <label for = "bonus" >Bonus $ : </label>
+                <input type ="number" id="bonus"></input>
+             </br>
+                <label for = "allowances" >Allowances $ : </label>
+                <input type ="number" id="allowances"></input>
+            </div>
+
+            <div class = "deduction" id = "deduction">
+                    <h1> Deductions in Dollars:</h1>
+                    
+                    <label for = "incometax" >Income Tax % : </label>
+                    <input type ="number" id="incometax"></input>
+                </br>
+                    <label for = "empInsurance" >Employee Insurance % : </label>
+                    <input type ="number" id="empInsurance"></input>
+                </br>
+                    <label for = "cpp" >Canadian Pension Plan % : </label>
+                    <input type ="number" id="cpp"></input>
+            </div>
+
+            <div class = "additonalDetails" id = "additonalDetails">
+                <h1>The Gender Of An Employee:</h1> 
+
+                <label for = "gender" > Male  </label>
+                <input type="radio" value="Male" name = "gender"></input>
+            </br>
+                <label for = "gender" > Female  </label>
+                <input type="radio" value="Female" name = "gender"></input>
+                
+                <h1>The Number Of Dependants:</h1> 
+
+                <label for = "dependants" > 1  </label>
+                <input type="radio" value= "1" name = "dependants"></input>
+            </br>
+                <label for = "dependants" > 2  </label>
+                <input type="radio" value= "2" name = "dependants"></input>
+            </br>
+                <label for = "dependants" > 3  </label>
+                <input type="radio" value= "3" name = "dependants"></input>
+            </br>
+                <label for = "dependants" > 4 </label>
+                <input type="radio" value= "4"  name = "dependants"></input>
+                    
+        </br>
+            
+        </div>
+
+        <div id = "button" class="button">
+        </br>
+        <button type = "submit"> Submit Form</button> 
+        </div>
+        <label id="result"></label>
+    </form>
+</body>
+<script src = "/js/backend.js"></script>
+</html>
