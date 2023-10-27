@@ -32,14 +32,6 @@ function calculateIncomeTax(incometax,gender,dependant){
 }
 
 function printDetails(firstName,grossPay,bonus,allowances,incometax,empInsurance,cpp,genderValue,dependantValue){
-    // return `
-    //         Name of the Employee : ${firstName}
-    //         Gender of the Employee : ${genderValue}
-    //         Number of dependants : ${dependantValue}
-    //         Total Salary : ${( grossPay + bonus + allowances )}
-    //         On Hand salary : ${calculateOnHandSalary(grossPay,bonus,allowances,incometax,empInsurance,cpp,genderValue,dependantValue)}
-    //         Total Deduction : ${((( grossPay + bonus + allowances ) * calculateIncomeTax(incometax,genderValue,dependantValue)+empInsurance+cpp))/100}
-    // `
     return `
     <div>
         <h5> Name of the Employee : ${firstName}</h5>
