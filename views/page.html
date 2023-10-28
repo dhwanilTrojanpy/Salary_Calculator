@@ -3,82 +3,94 @@
     <title>
         Salary Calculator
     </title>
-   
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   </head>
 <body>
-    <form id = "form" class = "form">
-        <div class = "container" id = "container">
+    <div class = "form-group" id = "container">
 
             <div class = "heading" id = "heading">
                     <h1>
-                        Salary Calculator
+                        Salary 
                     </h1>
             </div>
-
-            <div class = "userInfo" id = "userInfo">
+            <form id = "form" class = "form-group">
+                
+            <div class = "form-group row" id = "userInfo">
+                <legend > </legend>
+                <div class = "col-xs-3">
                    <label for = "firstName" >Enter Employee Name : </label>
-                   <input type = "text" id="firstName"></input>
-            </br>
+                   <input class="form-control" type = "text" class="form-control" id="firstName"></input>
+                </div>
+                <div class = "col-xs-3">
                    <label for = "grossPay" >Enter Gross Pay : </label>
-                   <input type = "text" id="grossPay"></input>
+                   <input class="form-control" type = "text" id="grossPay"></input>
+                </div>
+
             </div>
 
-            <div class = "addition" id = "addition">
-                <h1> Additions in Dollars:</h1>
-                
-                <label for = "bonus" >Bonus $ : </label>
-                <input type ="number" id="bonus"></input>
-             </br>
-                <label for = "allowances" >Allowances $ : </label>
-                <input type ="number" id="allowances"></input>
+            <div class = "form-group row">
+
+                <div class = "form-group col-xs-3">
+                    <label for = "bonus" >Bonus $ : </label>
+                    <input class="form-control" type ="number" id="bonus"></input>
+                </div>
+                <div class = "form-group col-xs-3">    
+                    <label for = "allowances" >Allowances $ : </label>
+                    <input class="form-control" type ="number" id="allowances"></input>
+                </div>
             </div>
 
-            <div class = "deduction" id = "deduction">
-                    <h1> Deductions in Dollars:</h1>
-                    
+            <div class = "form-group row">
+                <div class = "form-group col-md-3">    
                     <label for = "incometax" >Income Tax % : </label>
-                    <input type ="number" id="incometax"></input>
-                </br>
+                    <input class="form-control" type ="number" id="incometax"></input>
+                </div>
+                <div class = "form-group col-md-3">
                     <label for = "empInsurance" >Employee Insurance % : </label>
-                    <input type ="number" id="empInsurance"></input>
-                </br>
+                    <input class="form-control" type ="number" id="empInsurance"></input>
+                </div>
+                <div class = "form-group col-md-3">
                     <label for = "cpp" >Canadian Pension Plan % : </label>
-                    <input type ="number" id="cpp"></input>
+                    <input class="form-control" type ="number" id="cpp"></input>
+                </div>        
             </div>
 
-            <div class = "additonalDetails" id = "additonalDetails">
-                <h1>The Gender Of An Employee:</h1> 
+            <div class="form-check-inline">
+                <label class="form-check-label"> Gender</label></br>   
+                <input class="form-check-input" type="radio" id= "male" value="Male" name = "gender">
+                <label class="form-check-label" for = "male"> Male  </label>
 
-                <label for = "gender" > Male  </label>
-                <input type="radio" value="Male" name = "gender"></input>
-            </br>
-                <label for = "gender" > Female  </label>
-                <input type="radio" value="Female" name = "gender"></input>
+                <input class="form-check-input" type="radio" value="Female" name = "gender">
+                <label class="form-check-label"> Female  </label>
+            </div>
+
+            <div class="form-check form-check-inline">
                 
-                <h1>The Number Of Dependants:</h1> 
+                <label class="form-check-label" for = "dependants" > 1  </label>
+                <input class="form-check-input" type="radio" value= "1" name = "dependants"></input>
 
-                <label for = "dependants" > 1  </label>
-                <input type="radio" value= "1" name = "dependants"></input>
-            </br>
-                <label for = "dependants" > 2  </label>
-                <input type="radio" value= "2" name = "dependants"></input>
-            </br>
-                <label for = "dependants" > 3  </label>
-                <input type="radio" value= "3" name = "dependants"></input>
-            </br>
-                <label for = "dependants" > 4 </label>
-                <input type="radio" value= "4"  name = "dependants"></input>
-                    
-        </br>
+                <label class="form-check-label" for = "dependants" > 2  </label>
+                <input class="form-check-input" type="radio" value= "2" name = "dependants"></input>
             
+                <label class="form-check-label" for = "dependants" > 3 </label>
+                <input class="form-check-input" type="radio" value= "3" name = "dependants"></input>
+          
+                <label class="form-check-label" for = "dependants" > 4 </label>
+                <input class="form-check-input" type="radio" value= "4"  name = "dependants"></input>
+            </div>        
+            
+        
+        <div class="button">
+        <button type = "submit" class="btn btn-primary mb-2"> Submit Form</button> 
         </div>
-
-        <div id = "button" class="button">
-        </br>
-        <button type = "submit"> Submit Form</button> 
-        </div>
+        
         <label id="result"></label>
+        </div> 
+        </fieldset> 
     </form>
 </body>
-<script src = "/js/backend.js"></script>
+<script type = "module" src = "/js/backend.js"></script>
 </html>
